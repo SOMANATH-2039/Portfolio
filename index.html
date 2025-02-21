@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Start your development with Steller landing page."
+    />
+    <meta name="author" content="Devcrud" />
+    
+    <title>Portfolio of Somanath</title>
+    <!-- font icons -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/themify-icons/css/themify-icons.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/themify-icons/0.1.2/css/themify-icons.css">
+    <!-- Brain Circuit Icon (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+
+    <!-- Analytics Icon (Material Icons) -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- Bootstrap + Steller main styles -->
+    <link rel="stylesheet" href="assets/css/steller.css" />
+    <link rel="stylesheet" href="assets/css/skills.css" />
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .certificate-container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .certificate {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .certificate img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .certificate-details {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .certificate-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .certificate-subtitle {
+            color: #777;
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+
+        .badge {
+            background-color: #f1c40f;
+            color: #fff;
+            font-size: 0.9em;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .social {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social button,
+        .social input {
+            background-color: #eee;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .social button:hover {
+            background-color: #ddd;
+        }
+
+        .toggle-display {
+            display: flex;
+            align-items: center;
+        }
+
+        .toggle-display input {
+            margin-right: 10px;
+        }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <!-- Page navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top"
+      data-spy="affix"
+      data-offset-top="0"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="assets/imgs/logo.svg" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mr-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certifications">Testmonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End of page navibation -->
+
+    <!-- Page Header -->
+    <header class="header" id="home">
+      <div class="container">
+        <div class="infos">
+          <h6 class="subtitle">Hello,I'm</h6>
+          <h6 class="title">Somanath Singh</h6>
+          <p>Software Developer</p>
+
+          <div class="buttons pt-3">
+            <!-- <button class="btn btn-primary rounded">HIRE ME</button> -->
+            <button class="btn btn-dark rounded" onclick="downloadPDF()">
+              DOWNLOAD CV
+            </button>
+          </div>
+
+          <div class="socials mt-4">
+            <a class="social-item" href="javascript:void(0)"
+              ><i class="ti-facebook"></i
+            ></a>
+            <a class="social-item" href="javascript:void(0)"
+              ><i class="ti-google"></i
+            ></a>
+            <a class="social-item" href="javascript:void(0)"
+              ><i class="ti-github"></i
+            ></a>
+            <a class="social-item" href="javascript:void(0)"
+              ><i class="ti-twitter"></i
+            ></a>
+          </div>
+        </div>
+        <div class="img-holder">
+          <img src="assets/imgs/man.svg" alt="" />
+        </div>
+      </div>
+
+      <!-- Header-widget -->
+      <div class="widget">
+        <div class="widget-item">
+          <h2>500+</h2>
+          <p>Problems Solved</p>
+          <b><h2><a href="https://auth.geeksforgeeks.org/user/somanathsingh0803">GFG</a></h2></b>
+
+        </div>
+        <div class="widget-item">
+          <h2>456</h2>
+          <p>Problems Solved</p>
+          <b><h2><a href="https://leetcode.com/somanathsingh0803/">Leetcode</a></h2></b>
+        </div>
+        <div class="widget-item">
+          <h2>789</h2>
+          <p>Problems Solved</p>
+          <b><h2><a href="https://www.codechef.com/users/somanath_2039">Codechef</a></h2></b>
+        </div>
+      </div>
+    </header>
+    <br>
+    <!-- End of Page Header -->
+
+    <!-- About section -->
+    <section id="about" class="section mt-3">
+      <h1 class="title text-center"><u>About</u></h1>
+      <div class="container mt-5">
+        <div class="row text-center text-md-left">
+          <div class="col-md-3">
+            <img
+              src="assets/imgs/18.09.24=20.jpg"
+              alt=""
+              class="img-thumbnail mb-4"
+            />
+          </div>
+          <div class="pl-md-4 col-md-9">
+            <h6 class="title">Somanath Singh</h6>
+            <p class="subtitle">Software Developer</p>
+            <p style="text-align: justify;">
+              I am a skilled software engineer with a BTech degree in Computer Science and Engineering 
+              and a strong foundation in backend development. With hands-on experience in Python and 
+              Django, I have successfully developed advanced web applications, including a 
+              Restaurant Management System.My expertise extends to working with RESTful APIs using 
+              Django REST Framework (DRF),containerized application development with Docker, 
+               and efficient database management using PostgreSQL and MySQL.
+
+            </p>
+            <p>
+              I am passionate about creating scalable, robust, and high-performing solutions by 
+              leveraging modern technologies and development practices.
+
+            </p>
+            <button class="btn btn-primary rounded mt-3">
+              <a href=""></a>DOWNLOAD CV
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of About Section -->
+
+    <!-- Education section -->
+    <section class="bg-dark p-0 section">
+      <h1 class="title text-center">Education</h1>
+
+      <div class="container hire-me-container">
+        
+        
+        <div class="card hire-me-card">
+          <div class="card-body hire-me-card-body">
+            <div class="row align-items-center">
+              <!-- Left Section: Image and Text side by side -->
+              <div class="col-sm-9 d-flex flex-column">
+                <div class="d-flex align-items-center mb-3">
+                  <!-- Image Section -->
+                  <div class="col-sm-2 d-flex justify-content-center">
+                    <img
+                      src="assets/education/eduImgWhite.svg"
+                      alt="Education"
+                      class="img-thumbnail hire-me-image"
+                    />
+                  </div>
+                  <!-- Text Section -->
+                  <div class="col-sm-15 text-left">
+                    <p class="mt-3 text-left"><b>2020-2024</b></p>
+                    <h5 class="mt-3">Bachelor of Technology (Computer Science and Engineering)</h5>
+                    
+                    <h5 class="mt-3">Veer Surendra Sai University of Technology, Burla</h5>
+                  </div>
+                </div>
+    <br>
+                <div class="d-flex align-items-center">
+                  <!-- Image Section -->
+                  <div class="col-sm-2 d-flex justify-content-center">
+                    <img
+                      src="assets/education/eduImgWhite.svg"
+                      alt="Education"
+                      class="img-thumbnail hire-me-image"
+                    />
+                  </div>
+                  <!-- Text Section -->
+                  <div class="col-sm-15 text-left">
+                    <p class="mt-3 text-left"><b>2019-2020</b></p>
+                    <h5 class="mt-3">Higher Secondary (Science)</h5>
+                    <h5 class="mt-3">
+                      Jawahar Navodaya Vidyalaya, Salbani
+                    </h5>
+                  </div>
+                </div>
+              </div>
+    
+              <!-- Right Section: Full Height Image without Inside Border -->
+              <div class="col-sm-3 right-image-container">
+                <img
+                  src="assets/education/eduGreen.svg"
+                  alt="Education"
+                  class="hire-me-right-image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- End od Hire me section. -->
+
+
+    <!-- Service section -->
+    <section id="service" class="section">
+      <div class="container text-center">
+        <h6 class="subtitle">Service</h6>
+        <h6 class="section-title mb-4">What I Do</h6>
+        <p style="text-align: justify;">
+          I design and implement efficient backend systems that power applications, enabling 
+          seamless functionality and scalability. By harnessing the power of data science,
+          I uncover insights and patterns to drive informed decision-making. 
+          In the DevOps realm, I streamline deployment processes, automate workflows,
+          and ensure high system reliability. My work bridges development, data analysis,
+           and operational excellence, delivering innovative solutions for complex challenges.
+        </p>
+
+        <div class="row">
+          <div class="col-sm-6 col-md-3 mb-4">
+            <div class="custom-card card border">
+              <div class="card-body">
+                <i class="icon ti-server"></i>
+                <h5>Backend</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 mb-4">
+            <div class="custom-card card border">
+              <div class="card-body">
+                <i class="icon ti-cloud"></i>
+                <h5>DevOps</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 mb-4">
+            <div class="custom-card card border">
+              <div class="card-body">
+                <i class="icon ti-server"></i>
+                <h5>Data Science</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 mb-4">
+            <div class="custom-card card border">
+              <div class="card-body">
+                <i class="icon ti-book"></i>
+                <h5>Blog Writing</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 mb-4">
+            <div class="custom-card card border">
+              <div class="card-body">
+                <i class="icon ti-camera"></i>
+                <h5>Photography</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Sectoin -->
+
+    <!-- Skills section -->
+    <section class="section">
+      <div class="container text-center">
+        <h6 class="subtitle">Skills</h6>
+        <h6 class="section-title mb-4">Why Choose me</h6>
+        
+
+        <!-- Scrolling Skills Row -->
+        <div class="skills-viewport">
+          <div class="skills-row">
+            <div class="skill--box">
+              <img src="assets/imgs/skills/cplusplus.svg" alt="C++" />
+              <h3>C++</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/colab.svg" alt="Google Colab" />
+              <h3>Google Colab</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/python.svg" alt="Python" />
+              <h3>Python</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/html.svg" alt="HTML" />
+              <h3>HTML</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/css.svg" alt="CSS" />
+              <h3>CSS</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/postman.svg" alt="POSTMAN" />
+              <h3>Postman</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/django.svg" alt="DJANGO" />
+              <h3>Django</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/github.svg" alt="GITHUB" />
+              <h3>GitHub</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/docker.svg" alt="DOCKER" />
+              <h3>Docker</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/pandas.svg" alt="PANDAS" />
+              <h3>Pandas</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/c.svg" alt="C" />
+              <h3>C</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/mysql.svg" alt="MYSQL" />
+              <h3>MySQL</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/postgresql.svg" alt="POSTGRESQL" />
+              <h3>PostgreSQL</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/numpy.svg" alt="NUMPY" />
+              <h3>Numpy</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/nginx.svg" alt="NGINX" />
+              <h3>Nginx</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/git.svg" alt="GIT" />
+              <h3>Git</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/github.svg" alt="GITHUB" />
+              <h3>GitHub</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/linux.svg" alt="LINUX" />
+              <h3>Linux</h3>
+            </div>
+
+            <!-- Duplicate start -->
+            <div class="skill--box">
+              <img src="assets/imgs/skills/cplusplus.svg" alt="C++" />
+              <h3>C++</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/colab.svg" alt="Google Colab" />
+              <h3>Google Colab</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/python.svg" alt="Python" />
+              <h3>Python</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/html.svg" alt="HTML" />
+              <h3>HTML</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/css.svg" alt="CSS" />
+              <h3>CSS</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/postman.svg" alt="POSTMAN" />
+              <h3>Postman</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/django.svg" alt="DJANGO" />
+              <h3>Django</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/github.svg" alt="GITHUB" />
+              <h3>GitHub</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/docker.svg" alt="DOCKER" />
+              <h3>Docker</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/pandas.svg" alt="PANDAS" />
+              <h3>Pandas</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/c.svg" alt="C" />
+              <h3>C</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/mysql.svg" alt="MYSQL" />
+              <h3>MySQL</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/postgresql.svg" alt="POSTGRESQL" />
+              <h3>PostgreSQL</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/numpy.svg" alt="NUMPY" />
+              <h3>Numpy</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/nginx.svg" alt="NGINX" />
+              <h3>Nginx</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/git.svg" alt="GIT" />
+              <h3>Git</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/github.svg" alt="GITHUB" />
+              <h3>GitHub</h3>
+            </div>
+            <div class="skill--box">
+              <img src="assets/imgs/skills/linux.svg" alt="LINUX" />
+              <h3>Linux</h3>
+            </div>
+            <!-- Repeat or add more skill boxes as needed -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Skills sections -->
+
+    <!-- Projects section -->
+    <section id="projects" class="section">
+      <div class="container text-center">
+        <h6 class="section-title mb-4">Projects</h6>
+        
+        <p class="mb-5 pb-4">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias
+          dignissimos. <br />
+          rerum commodi corrupti, temporibus non quam.
+        </p>
+        <div class="row text-left">
+          <div class="col-md-4">
+            <div class="card border mb-4">
+              <img
+                src="assets/imgs/blog-1.jpg"
+                alt=""
+                class="card-img-top w-100"
+              />
+              <div class="card-body">
+                <h5 class="card-title"><u>Restaurant Management System</u></h5>
+                
+                <p>
+                  RMS is a comprehensive Web based solution using Django,aimed at streamlining restaurant 
+                  operations.It includes dynamic menu filtering,real time order processing,inventory 
+                   and employee management system. Integrated Razorpay for payment processing
+                  and invoice generation.
+
+                </p>
+                <div class="project-social-icons">
+                  <a class="project-social-item" href="javascript:void(0)">
+                      <i class="ti-github"></i>
+                  </a>
+                  <a class="project-social-item" href="javascript:void(0)">
+                      <i class="ti-world"></i>
+                  </a>
+              </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4">
+            <div class="card border mb-4">
+              <img
+                src="assets/imgs/blog-2.jpg"
+                alt=""
+                class="card-img-top w-100"
+              />
+              <div class="card-body">
+                <h5 class="card-title"><u>ShopiFy (E-Commerce)</u></h5>
+                
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
+                  ad vel dolorum, iusto velit, minima? Voluptas nemo harum
+                  impedit nisi.
+                </p>
+                <div class="project-social-icons">
+                  <a class="project-social-item" href="javascript:void(0)">
+                      <i class="ti-github"></i>
+                  </a>
+                  <a class="project-social-item" href="javascript:void(0)">
+                      <i class="ti-world"></i>
+                  </a>
+              </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4">
+            <div class="card border mb-4">
+              <img
+                src="assets/imgs/blog-3.jpg"
+                alt=""
+                class="card-img-top w-100"
+              />
+              <div class="card-body">
+                <h5 class="card-title"><u>Financial Fraud Detection</u></h5>
+                
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
+                  ad vel dolorum, iusto velit, minima? Voluptas nemo harum
+                  impedit nisi.
+                </p>
+                <div class="project-social-icons">
+                  <a class="project-social-item" href="javascript:void(0)">
+                      <i class="ti-github"></i>
+                  </a>
+                  <a class="project-social-item" href="javascript:void(0)">
+                      <i class="ti-world"></i>
+                  </a>
+              </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        
+    </section>
+    <!-- End of project section -->
+
+    <!-- Testmonial Section -->
+    <section id="certifications" class="section">
+      
+        <div class="container">
+          <h6 class="section-title mb-4 text-center">Certificates</h6>
+          <p class="mb-5 pb-4 text-center">
+            A showcase of certifications that validate my skills and expertise in
+            various domains.
+          </p>
+          <div class="row">
+            <div class="col-md-12 mb-4">
+              <div class="certificate border p-3">
+                <img src="\assets\imgs\skills\gcp.svg" alt="Certificate Badge">
+                <div class="certificate-details">
+                    <div class="badge"> Automation</div>
+                    <div class="certificate-title">Google IT Automation with Python</div>
+                    <div class="certificate-subtitle">
+                      <p style="text-align: justify;">
+                      I completed a six-course certificate program developed by Google, 
+                      designed to equip IT professionals with in-demand skills 
+                      like Python, Git, and IT automation. Through a hands-on curriculum, 
+                      I learned how to write efficient code in Python, focusing on automating
+                      tasks in IT support and systems administration. This program has significantly
+                      enhanced my technical skills and prepared me to tackle real-world challenges 
+                      in IT with confidence.</p>
+                    </div>
+                    
+                </div>
+                <div class="social">
+                  <button></button>
+                  
+                    <button style="display: flex; justify-content: flex-end; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                      <a href="https://coursera.org/verify/professional-cert/P710Q1ATD5M4" style="color: white; text-decoration: none; font-weight: bold;">Verify</a>
+                    </button>
+                    
+                    <button></button>
+                </div>
+              </div>
+              <!-- certificate 2 -->
+              <div class="certificate border p-3">
+                <img src="assets\imgs\deeplearning.png" alt="Certificate Badge">
+                <div class="certificate-details">
+                    <div class="badge">Machine Learning</div>
+                    <div class="certificate-title"> Machine Learning</div>
+                    <div class="certificate-subtitle">
+                      <p style="text-align: justify;">
+
+                      This course, I gained a comprehensive understanding of machine learning,
+                      data mining, and statistical pattern recognition. I explored supervised
+                      learning techniques, including parametric/non-parametric algorithms,
+                      support vector machines, kernels, and neural networks. I also studied 
+                      unsupervised learning methods like clustering, dimensionality reduction,
+                      recommender systems, and deep learning.
+
+                      The course emphasized best practices in machine learning, such as
+                      bias-variance tradeoff and the innovation process in AI. Through case
+                      studies and applications, I learned to apply algorithms to real-world
+                      problems, including building smart robots, text understanding 
+                      (e.g., web search, anti-spam), computer vision, medical informatics,
+                      and database mining.</p>
+                    </div>
+                    
+                </div>
+                <div class="social">
+                  <button></button>
+                    
+                  <button style="display: flex; justify-content: flex-end; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                    <a href="https://coursera.org/verify/UZ8JDJPHAJX8" style="color: white; text-decoration: none; font-weight: bold;">Verify</a>
+                  </button>
+                  <button></button>
+                  
+                    <!-- <input type="text" value="https://saief.live/certificate/12345" readonly> -->
+                </div>
+              </div>
+              <!-- certificate 3 -->
+              <div class="certificate border p-3">
+                <img src="assets\imgs\deeplearning.png" alt="Certificate Badge">
+                <div class="certificate-details">
+                    <div class="badge">NLP</div>
+                    <div class="certificate-title"> Natural Language Processing</div>
+                    <div class="certificate-subtitle">
+                      <p style="text-align: justify;">
+
+                      In this Specialization, I developed advanced natural language processing (NLP) 
+                      skills through hands-on projects. I performed sentiment analysis of tweets 
+                      using logistic regression and naïve Bayes, explored vector space models to 
+                      uncover word relationships, and applied PCA to reduce dimensionality for
+                      visualization. I also created an English-to-French translation algorithm 
+                      using word embeddings and locality-sensitive hashing for approximate k-nearest
+                      neighbor search. By the end, I had built NLP applications for question-answering,
+                      sentiment analysis, translation, and text summarization. The program was taught
+                      by experts Younes Bensouda Mourri from Stanford and Łukasz Kaiser from Google
+                      Brain, making it an enriching experience.
+                    </p>
+                    </div>
+                    
+                </div>
+                <div class="social">
+                  
+                  <button></button>
+                    
+                  <button style="display: flex; justify-content: flex-end; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                    <a href="https://www.coursera.org/verify/Y46LRDY3P3KG" style="color: white; text-decoration: none; font-weight: bold;">Verify</a>
+                  </button>
+                  <button></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+            
+      </div>
+            
+            
+              
+            
+      </section>
+    
+    <!-- End of testmonial section -->
+
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+      <div class="container text-center">
+        <h6 class="subtitle">My Blogs</h6>
+        <h6 class="section-title mb-4">Latest News</h6>
+        <p class="mb-5 pb-4">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias
+          dignissimos. <br />
+          rerum commodi corrupti, temporibus non quam.
+        </p>
+
+        <div class="row text-left">
+          <div class="col-md-4">
+            <div class="card border mb-4">
+              <img
+                src="assets/imgs/blog-1.jpg"
+                alt=""
+                class="card-img-top w-100"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Designe for Everyone</h5>
+                <div class="post-details">
+                  <a href="javascript:void(0)">Posted By: Admin</a>
+                  <a href="javascript:void(0)"
+                    ><i class="ti-thumb-up"></i> 456</a
+                  >
+                  <a href="javascript:void(0)"
+                    ><i class="ti-comment"></i> 123</a
+                  >
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
+                  ad vel dolorum, iusto velit, minima? Voluptas nemo harum
+                  impedit nisi.
+                </p>
+                <a href="javascript:void(0)">Read More..</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border mb-4">
+              <img
+                src="assets/imgs/blog-2.jpg"
+                alt=""
+                class="card-img-top w-100"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Web Layouts</h5>
+                <div class="post-details">
+                  <a href="javascript:void(0)">Posted By: Admin</a>
+                  <a href="javascript:void(0)"
+                    ><i class="ti-thumb-up"></i> 456</a
+                  >
+                  <a href="javascript:void(0)"
+                    ><i class="ti-comment"></i> 123</a
+                  >
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
+                  ad vel dolorum, iusto velit, minima? Voluptas nemo harum
+                  impedit nisi.
+                </p>
+                <a href="javascript:void(0)">Read More..</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border mb-4">
+              <img
+                src="assets/imgs/blog-3.jpg"
+                alt=""
+                class="card-img-top w-100"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bootstrap Framework</h5>
+                <div class="post-details">
+                  <a href="javascript:void(0)">Posted By: Admin</a>
+                  <a href="javascript:void(0)"
+                    ><i class="ti-thumb-up"></i> 456</a
+                  >
+                  <a href="javascript:void(0)"
+                    ><i class="ti-comment"></i> 123</a
+                  >
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
+                  ad vel dolorum, iusto velit, minima? Voluptas nemo harum
+                  impedit nisi.
+                </p>
+                <a href="javascript:void(0)">Read More..</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="- btn btn-primary rounded ml-4" href=""
+          >More</a
+        >
+      </div>
+    </section>
+
+    
+    <!-- Contact Section -->
+    <section id="contact" class="position-relative section">
+      <div class="container text-center">
+        <h6 class="subtitle">Contact</h6>
+        <h6 class="section-title mb-4">Get In Touch With Me</h6>
+        
+      
+
+        <div class="contact text-left">
+          <div class="form">
+            <h6 class="subtitle">Available 24/7</h6>
+            <h6 class="section-title mb-4">Get In Touch</h6>
+            <form action="https://formsubmit.co/somanathsingh3733@gmail.com" id="contactForm"
+              method="POST">
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="contact-message"
+                  id="message"
+                  cols="30"
+                  rows="5"
+                  class="form-control"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary btn-block rounded w-lg"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+          
+          <div class="contact-infos">
+            <div class="item">
+              <i class="ti-location-pin"></i>
+              <div class="">
+                <h5>Location</h5>
+                <p>12345 Fake ST NoWhere AB Country</p>
+              </div>
+            </div>
+            <div class="item">
+              <i class="ti-mobile"></i>
+              <div>
+                <h5>Phone Number</h5>
+                <p>(123) 456-7890</p>
+              </div>
+            </div>
+            <div class="item">
+              <i class="ti-email"></i>
+              <div class="mb-0">
+                <h5>Email Address</h5>
+                <p>info@website.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div id="map">
+        <iframe src="https://snazzymaps.com/embed/61257"></iframe>
+      </div> -->
+    </section>
+    <!-- End of Contact Section -->
+
+    <!-- Page Footer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-sm-6">
+            <p>
+              Copyright
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              &copy;
+              <a href="https://somanath-singh.netlify.app" target="_blank">Somanath</a>
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <div class="socials">
+              <a class="social-item" href="javascript:void(0)"
+                ><i class="ti-facebook"></i
+              ></a>
+              <a class="social-item" href="javascript:void(0)"
+                ><i class="ti-google"></i
+              ></a>
+              <a class="social-item" href="javascript:void(0)"
+                ><i class="ti-github"></i
+              ></a>
+              <a class="social-item" href="javascript:void(0)"
+                ><i class="ti-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End of page footer -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- steller js -->
+    <script src="assets/js/steller.js"></script>
+
+    <script>
+      function downloadPDF() {
+        const link = document.createElement("a");
+        link.href = "assets/resume/SOMANATH_SINGH.pdf";
+        link.download = "SOMANATH_SINGH.pdf";
+        document.body.appendChild(link);
+        link.click();
+
+        document.body.removeChild(link);
+      }
+
+
+    </script>
+    <script>
+      // JavaScript to handle form submission
+      document.getElementById('contactForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent page refresh
+    
+        // Capture form inputs
+        const email = document.getElementById('email').value.trim();
+        const name = document.getElementById('name').value.trim();
+        const message = document.getElementById('message').value.trim();
+    
+        // Basic validation
+        if (!email || !name || !message) {
+          alert('All fields are required!');
+          return;
+        }
+    
+        // Mock form submission (replace with your backend API call)
+        console.log('Form Submitted:', { email, name, message });
+        alert('Thank you for getting in touch! We will respond shortly.');
+    
+        // Reset form
+        document.getElementById('contactForm').reset();
+      });
+    </script>
+    
+  </body>
+</html>
